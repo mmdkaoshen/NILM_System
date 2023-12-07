@@ -1,0 +1,10 @@
+# Logs
+logs
+*.log
+
+# Editor directories and files
+.idea
+__pycache__/
+test.py
+System/test.py
+Test/.pytest_cache/

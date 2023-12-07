@@ -1,0 +1,13 @@
+{
+    "initialize" : {
+        "in_channel" : 1,
+        "out_channel" : 1,
+        "mid_channel" : 64,
+        "kernel_size" : 3,
+        "device_num" : 5,
+        "depth" : 4
+    },
+    "weights" : {
+        "path" : "./Model/NILMFormer/weight/5DevicesSeperation_iPad_vivo_monitor_fan_pot_MossformerRewrite/best_model.pth"
+    }
+}
