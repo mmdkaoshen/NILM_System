@@ -63,7 +63,7 @@ class DisaggregatorThread(threading.Thread):
         self.model.load_state_dict(torch.load(self.config['weights']['path'], map_location=self.device))
         logger.info('Weights loading complete.')
 
-    def aggregate(self):
+    def disaggregate(self):
         mains = torch.Tensor(self.current).type(torch.FloatTensor).to(device=self.device)
         mains = mains.unsqueeze(0)
         mains /= 4000
@@ -103,4 +103,4 @@ class DisaggregatorThread(threading.Thread):
     def processOnce(self):
         if not self.dataQueue.empty():
             self.getRawData()
-            self.calculateResult(self.aggregate())
+            self.calculateResult(self.disaggregate())

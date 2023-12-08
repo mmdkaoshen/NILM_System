@@ -7,6 +7,11 @@
         "device_num" : 5,
         "depth" : 4
     },
+    "train": {
+        "epoch": 50,
+        "lr": 0.001,
+        "checkpoint": "../Model/NILMFormer/train"
+    },
     "weights" : {
         "path" : "./Model/NILMFormer/weight/5DevicesSeperation_iPad_vivo_monitor_fan_pot_MossformerRewrite/best_model.pth"
     }
